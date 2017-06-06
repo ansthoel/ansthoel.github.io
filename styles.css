@@ -1,8 +1,22 @@
-.header{
-	font-family: 'Open Sans', sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+	 font-family: 'Open Sans', sans-serif;
+}
+
+/* Setting the flex container*/
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: center;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   text-align: center;
 }
 
 
-.body {
-	font-family: 'Open Sans', sans-serif;
-}
+header{
+	background-color: black;
+	font-color: white;
+	}
