@@ -1,22 +1,55 @@
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-	 box-sizing: border-box;
-	 font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
-/* Setting the flex container*/
-.flexcontainer {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-justify-content: center;
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   text-align: center;
+.wrapper {
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main sidebar"
+    "footer footer footer";
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+    background-color: azure;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right:20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.mainheader {
+    grid-area: header;
+    background-color: darkblue
+}
+
+.nav {
+    grid-area: nav;
+    background-color: burlywood
+}
+
+.main{
+    grid-area: main;
+    background-color: black;
 }
 
 
-header{
-	background-color: black;
-	font-color: white;
-	}
+.sidebar {
+   grid-area: sidebar;
+    background-color: dimgray
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+article {
+    padding: 5px;
+    color: white;
+}
