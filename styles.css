@@ -1,5 +1,13 @@
+/*Color palette
+    Teracotta: #945d60
+    Herb #626e60
+    Chili #AF473C
+    Charcoal: #3c3c3c
+*/
+
 * {
     box-sizing: border-box;
+    color: white;
 }
 
 .wrapper {
@@ -13,7 +21,7 @@
     "footer footer footer";
     grid-row-gap: 15px;
     grid-column-gap: 20px;
-    background-color: azure;
+    background-color: white;
     justify-content: center;
     padding-left: 20%;
     padding-right:20%;
@@ -23,30 +31,39 @@
 
 .mainheader {
     grid-area: header;
-    background-color: darkblue
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    padding: 10%;
 }
 
 .nav {
     grid-area: nav;
-    background-color: burlywood
+    background-color: #626e60;
+    border-radius: 10px;
 }
 
 .main{
     grid-area: main;
-    background-color: black;
+    background-color: #3c3c3c;
+    padding: 5%;
+    border-radius: 10px;
 }
 
 
 .sidebar {
    grid-area: sidebar;
-    background-color: dimgray
+    background-color: #af473c;
+    padding: 5%;
+    border-radius: 10px;
 }
 
 .footer{
     grid-area: footer;
     text-align: center;
-    background-color: black;
+    background-color: #3c3c3c;
     color: white;
+    padding: 5%;
+    border-radius: 10px;
 }
 
 article {
