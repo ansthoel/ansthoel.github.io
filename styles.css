@@ -17,16 +17,12 @@
     grid-template-areas: 
     "header header header"
     "nav nav nav"
-    "main main sidebar"
+    "sidebar main main"
     "footer footer footer";
-    grid-row-gap: 15px;
-    grid-column-gap: 20px;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
     background-color: white;
     justify-content: center;
-    padding-left: 20%;
-    padding-right:20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 .mainheader {
